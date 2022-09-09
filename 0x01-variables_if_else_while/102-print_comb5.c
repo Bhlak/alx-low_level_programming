@@ -9,36 +9,22 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	int num1, num2;
 
-	for (i = 0; i < 10; i++)
+	for (num1 = 0; num1 < 99; num1++)
 	{
-		for (j = 0; j < 10; j++)
+		for (num2 = num1 + 1; num2 < 100; num2++)
 		{
-			for (k = 0; k < 10; k++)
-			{
-				if (i > k)
-				{
-					continue;
-				}
-				for (l = 0; l < 10; l++)
-				{
-					if ((i > k) || (i == k && j == l))
-					{
-						continue;
-					}
-					putchar('0' + i);
-					putchar('0' + j);
-					putchar(' ');
-					putchar('0' + k);
-					putchar('0' + l);
-					if (!(i + j == 17 && k + l == 18))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-			}
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
+
+			if (num1 == 98 && num2 == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
