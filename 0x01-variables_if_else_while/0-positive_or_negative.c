@@ -7,7 +7,7 @@
  *
  * Description - Prints whether a random number is positive or negative
  *
- * return - 0 (Always Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -28,6 +28,6 @@ int main(void)
 	{
 		outp = "negative";
 	}
-	printf("%d is %s\n", &n);
+	printf("%d is %s\n", n, outp);
 	return (0);
 }
