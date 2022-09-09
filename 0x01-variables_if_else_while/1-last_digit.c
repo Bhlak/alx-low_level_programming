@@ -10,10 +10,11 @@
 int main(void)
 {
 	int n;
-	int dig = n % 10;
+	int dig;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	dig = n % 10;
 
 	if (dig == 0)
 	{
