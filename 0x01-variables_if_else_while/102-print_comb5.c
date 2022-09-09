@@ -17,6 +17,10 @@ int main(void)
 		{
 			for (k = 0; k < 10; k++)
 			{
+				if (i > k)
+				{
+					continue;
+				}
 				for (l = 0; l < 10; l++)
 				{
 					if ((i > k) || (i == k && j == l))
