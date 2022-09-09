@@ -8,10 +8,12 @@
 int main(void)
 {
 	char arf[27] = "abcdefghijklmnopqrstuvwxyz";
+	int i = 0;
 
-	for (int i = 0; i < 26; i++)
+	while ( i < 26)
 	{
 		putchar(arf[i]);
+		i++;
 	}
 	putchar('\n');
 	return (0);
