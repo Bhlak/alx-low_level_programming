@@ -9,17 +9,21 @@ void times_table(void)
 	int i, j, res;
 
 	i = 0;
-	j = 0;
 
 	while (i < 10)
 	{
+		j = 0;
 		while (j < 10)
 		{
 			res = i * j;
 			_putchar(res + '0');
+			if (j == 9)
+			{
+				break;
+			}
+			j++;
 			_putchar(',');
 			_putchar(' ');
-			j++;
 		}
 		_putchar('\n');
 		i++;
