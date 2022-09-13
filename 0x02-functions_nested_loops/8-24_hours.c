@@ -6,14 +6,15 @@
 
 void jack_bauer(void)
 {
-	int i, j, k, l;
+	int i, j, k, l, limit;
 
 	i = 0;
 
 	while (i < 3)
 	{
 		j = 0;
-		while (j < 4)
+		i == 2 ? limit = 4 : limit = 10;
+		while (j < limit)
 		{
 			k = 0;
 			while (k < 6)
