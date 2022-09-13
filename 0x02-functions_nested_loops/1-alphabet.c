@@ -6,8 +6,12 @@
  * Return: Alwayxs 0 (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char a;
+	while (a <= 'z')
+	{
+		_putchar(a++);
+	}
+	_putchar('\n');
 }
