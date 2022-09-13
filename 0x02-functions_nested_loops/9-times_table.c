@@ -21,7 +21,14 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar((res / 10) + 48);
+				if ((res / 10) == 0)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar((res / 10) + 48);
+				}
 				_putchar((res % 10) + 48);
 			}
 
