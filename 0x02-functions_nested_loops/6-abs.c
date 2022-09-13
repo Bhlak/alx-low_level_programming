@@ -3,7 +3,7 @@
 /**
  * _abs - Finds the absolute value of a number
  *
- * @a: Number to be checked
+ * @n: Number to be checked
  *
  * Return: Absolute value of the number
  */
