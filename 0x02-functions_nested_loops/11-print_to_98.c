@@ -8,8 +8,9 @@
 
 void print_to_98(int n)
 {
-	n = 98;
 	int i = 0;
+
+	n = 98;
 
 	while (i <= n)
 	{
