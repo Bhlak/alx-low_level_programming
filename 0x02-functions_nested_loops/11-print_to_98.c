@@ -31,20 +31,20 @@ void print_to_98(int n)
 	}
 	else
 	{
-		if (n >= 100)
-		{
-			_putchar((n / 100) + 48);
-		}
 		while (n >= 98)
 		{
+			if (n >= 100)
+			{
+				_putchar((n / 100) + 48);
+			}
 			_putchar((n / 10) + 48);
 			_putchar((n % 10) + 48);
-		if (!(n == 98))
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-		n--;
+			if (!(n == 98))
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			n--;
 		}
 		_putchar('\n');
 	}
