@@ -14,13 +14,13 @@ void print_triangle(int size)
 	{
 		for (space = size - shape; space > 0; space--)
 		{
-			putchar(' ');
+			_putchar(' ');
 		}
 		for (b = 0; b < shape; b++)
 		{
-			putchar('#');
+			_putchar('#');
 		}
 		shape++;
-		putchar('\n');
+		_putchar('\n');
 	}
 }
