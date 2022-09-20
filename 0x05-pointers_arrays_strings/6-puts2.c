@@ -9,14 +9,17 @@ void puts2(char *str)
 {
 	int count = 1;
 
-	_putchar(*(str + 0));
-	while (*(str + count) != '\0')
+	if (*(str + 0) != '\0')
 	{
-		if (count % 2 == 0)
+		_putchar(*(str + 0));
+		while (*(str + count) != '\0')
 		{
-			_putchar(*(str + count));
+			if (count % 2 == 0)
+			{
+				_putchar(*(str + count));
+			}
+			count++;
 		}
-		count++;
 	}
 	_putchar('\n');
 }
