@@ -9,9 +9,9 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0, a = 0;
+	int i = 0, a = -1;
 
-	while (*(dest + i) != '\0')
+	while (dest[i] != '\0')
 	{
 		i++;
 	}
@@ -22,7 +22,7 @@ char *_strcat(char *dest, char *src)
 		a++;
 		dest[i] = src[a];
 		i++;
-	} while (*(src + a) != '\0');
+	} while (src[a] != '\0');
 
 	return (dest);
 }
