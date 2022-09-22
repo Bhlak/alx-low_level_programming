@@ -10,7 +10,6 @@ void reverse_array(int *a, int n)
 {
 	int lower = 0, higher = n - 1, temp;
 
-	printf("%d\n", a[n - 8]);
 	while (lower <= higher)
 	{
 		temp = a[lower];
