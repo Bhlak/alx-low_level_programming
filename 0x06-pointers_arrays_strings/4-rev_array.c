@@ -6,7 +6,7 @@
  * @n: number of elements in the array
  */
 
-void reverse_array(char *a, int n)
+void reverse_array(int *a, int n)
 {
 	int lower = 0, higher = n - 1, temp;
 
