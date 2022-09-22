@@ -9,10 +9,11 @@
 char *leet(char *str)
 {
 	int i = 0, j = 0;
-	char a[11] = "aAeEoOtTlL",  b[11] = "443307711";
+	char a[11] = "aAeEoOtTlL", b[11] = "443307711";
 
 	while (str[i] != '\0')
 	{
+		j = 0;
 		while (j < 10)
 		{
 			if (str[i] == a[j])
