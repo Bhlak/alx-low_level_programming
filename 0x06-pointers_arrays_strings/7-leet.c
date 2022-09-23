@@ -8,8 +8,9 @@
 
 char *leet(char *str)
 {
-	int i = 0, j = 0;
-	char a[11] = "aAeEoOtTlL", b[11] = "443307711";
+	int i = 0, j;
+	char a[11] = "aAeEoOtTlL";
+	char b[11] = "443307711";
 
 	while (str[i] != '\0')
 	{
