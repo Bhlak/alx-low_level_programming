@@ -12,7 +12,7 @@ char *_strchr(char *s, char c)
 	int a = 0;
 	char *ptr;
 
-	while (s[a] != c)
+	while (s[a] != c && s[a] != '/0')
 	{
 		a++;
 	}
