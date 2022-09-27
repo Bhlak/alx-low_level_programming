@@ -9,16 +9,17 @@
 
 char *_strpbrk(char *s, char *accept)
 {
+	int a = 0;
 
 	while (*s)
 	{
-		while (*accept)
+		while (accept[a])
 		{
-			if (*s == *accept)
+			if (*s == accept[a])
 			{
 				return (s);
 			}
-			accept++;
+			a++;
 		}
 		s++;
 	}
