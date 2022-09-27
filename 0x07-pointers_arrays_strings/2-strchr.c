@@ -12,8 +12,12 @@ char *_strchr(char *s, char c)
 	int a = 0;
 	char *ptr;
 
-	while (s[a] != c && s[a] != '/0')
+	while (s[a] != c)
 	{
+		if (s[a] == '\0')
+		{
+			break;
+		}
 		a++;
 	}
 	ptr = &s[a];
