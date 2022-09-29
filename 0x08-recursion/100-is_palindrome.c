@@ -35,9 +35,9 @@ int counter(char *s)
 
 int pali(char *s, int n)
 {
-	if (l < 1)
+	if (n < 1)
 		return (1);
 	if (*s != *(s + n))
 		return (0);
-	return (pali(++s, l - 2));
+	return (pali(++s, n - 2));
 }
