@@ -11,7 +11,7 @@
 int main(int argc, char **argv)
 {
 	int num, total = 0;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
