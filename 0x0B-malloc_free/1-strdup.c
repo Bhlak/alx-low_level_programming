@@ -12,9 +12,9 @@ char *_strdup(char *str)
 	int count = 1, i = 0;
 	char *s;
 
-	if (*str == NULL)
+	if (str == NULL)
 		return (NULL);
-	while (*str)
+	while (str)
 	{
 		count++;
 		str++;
