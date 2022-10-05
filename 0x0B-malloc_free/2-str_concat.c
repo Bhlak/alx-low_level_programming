@@ -18,37 +18,21 @@ char *str_concat(char *s1, char *s2)
 	while (s2[j++] != '\0')
 		;
 
-	if (s1 == NULL)
+	str = malloc(sizeof(char) * (i + j + 1));
+
+	if (str == NULL)
+		return (NULL);
+
+	while (k <= i)
 	{
-		str = malloc(sizeof(char) * (j + 1));
-		while (l <= j)
-		{
-			str[l] = s2[l];
-			l++;
-		}
+		str[k] = s1[k];
+		k++;
 	}
-	else if (s2 == NULL)
+	while (l <= j)
 	{
-		str = malloc(sizeof(char) * (i + 1));
-		while (k <= i)
-		{
-			str[k] = s1[k];
-			k++;
-		}
-	}
-	else
-	{
-		str = malloc(sizeof(char) * (i + j + 2));
-		while (k <= i)
-		{
-			str[k] = s1[k];
-			k++;
-		}
-		while (l <= j)
-		{
-			str[k + l] = s2[l];
-			l++;
-		}
+		str[k] = s2[l];
+		k++;
+		l++;
 	}
 	return (str);
 }
