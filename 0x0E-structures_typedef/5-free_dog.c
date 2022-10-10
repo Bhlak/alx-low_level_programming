@@ -4,6 +4,7 @@
 /**
  * free_dog - Frees dogs
  * @d: Dog object
+ * Return: Nothing
  */
 
 void free_dog(dog_t *d)
