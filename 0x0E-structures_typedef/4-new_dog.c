@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include "dog.h"
 
+int _strlen(char *s);
+char *_strcpy(char *dest, char *src);
+
 /**
- * *new_dog - Creates a new dog
+ * new_dog - Creates a new dog
  * @name: Name of new dog
  * @age: Age of new dog
  * @owner: Owner of new dog
