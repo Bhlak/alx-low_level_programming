@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 	oprt = get_op_func(argv[2]);
-	if (!oprt)
+	if (!oprt || argv[2][1])
 	{
 		printf("Error\n");
 		exit(99);
