@@ -20,7 +20,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == form[j] && c)
 			{
-				printf(", "), c = 0;
+				printf(", ");
 				break;
 			} j++;
 		}
