@@ -1,4 +1,4 @@
-#include "variable_functions.h"
+#include "variadic_functions.h"
 
 /**
  * print_numbers - Prints numbers folowed by a new line
