@@ -7,7 +7,7 @@
  * Return: Number of Nodes
  */
 
-size_t print_list(const list_h *h)
+size_t print_list(const list_t *h)
 {
 	size_t i = 0;
 
