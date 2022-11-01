@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * cret=ate_file - Creates a file
+ * create_file - Creates a file
  * @filename: File Name
  * @text_content: Text to be written to file
  *
