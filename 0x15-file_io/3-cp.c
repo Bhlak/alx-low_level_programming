@@ -1,5 +1,8 @@
 #include "main.h"
 
+char *create_buffer(char *file);
+void close_file(int fd);
+
 /**
  * create_buffer - Creates a buffer
  * @file: File to be written to
