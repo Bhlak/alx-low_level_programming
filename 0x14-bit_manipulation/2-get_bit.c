@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * get_bit  Gets the value of a bit at a given index
+ * get_bit -  Gets the value of a bit at a given index
  *
- * n: Binary number to be processed
+ * @n: Binary number to be processed
  *
- * index: Index to be checked
+ * @index: Index to be checked
  *
  * Return: Value of bit at index (Success)
  * -1 (Error)
