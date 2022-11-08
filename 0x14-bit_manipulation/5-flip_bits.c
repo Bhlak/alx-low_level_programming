@@ -11,7 +11,7 @@
  * Return: The necessary number of bits of n to flip to get m.
  */
 
-unsigned int flip_bits(unsignede long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int diff = n ^ m, res = 0;
 
